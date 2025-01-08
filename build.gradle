@@ -1,0 +1,80 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src\\main\\java']
+        }
+        resources {
+            srcDirs = ['src/resources']
+        }
+    }
+}
+
+javafx {
+    version = "23"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+dependencies {
+    implementation 'org.openjfx:javafx-controls:23'
+    implementation 'org.apache.logging.log4j:log4j-core:2.24.3'
+    implementation 'org.apache.logging.log4j:log4j-api:2.24.3'
+    implementation 'org.apache.logging.log4j:log4j-slf4j2-impl:2.24.3'
+    implementation 'org.openjfx:javafx-graphics:23'
+}
+
+application {
+    mainClass = 'main.java.Metro' // Главный класс вашего приложения
+}
+
+tasks.named('javadoc') {
+    options {
+        encoding = 'UTF-8'
+        charSet = 'UTF-8'
+        author = true
+        version = true
+        links("https://docs.oracle.com/en/java/javase/17/docs/api/")
+        links("https://openjfx.io/javadoc/23/")
+    }
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'main.java.Metro'
+        )
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+task fatJar(type: Jar) {
+    group = 'build'
+    description = 'Assembles a fat JAR file with all dependencies.'
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    from sourceSets.main.output
+
+    dependsOn configurations.runtimeClasspath
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+
+    manifest {
+        attributes(
+                'Main-Class': 'main.java.Metro'
+        )
+    }
+
+    archiveClassifier.set('fat')
+}
+
+build.dependsOn fatJar
