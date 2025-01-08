@@ -1,0 +1,15 @@
+-author 
+-charset 'UTF-8'
+-classpath 'D:\\IdeaProjects\\Mainich\\build\\classes\\java\\main;D:\\IdeaProjects\\Mainich\\build\\resources\\main;C:\\Users\\алексей\\.gradle\\caches\\modules-2\\files-2.1\\org.openjfx\\javafx-fxml\\23\\f8f33c215eb9c172d62e1646cb5dc351bc5d918e\\javafx-fxml-23-win.jar;C:\\Users\\алексей\\.gradle\\caches\\modules-2\\files-2.1\\org.openjfx\\javafx-controls\\23\\953bc543e4949437103d9d12310c4a96846fbb94\\javafx-controls-23-win.jar;C:\\Users\\алексей\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.logging.log4j\\log4j-core\\2.24.3\\7f6a261243ca767c7f38fd4b542bcde626c8894e\\log4j-core-2.24.3.jar;C:\\Users\\алексей\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.logging.log4j\\log4j-slf4j2-impl\\2.24.3\\c3bda2dc612bfc780ad06c5acf5e0ffd55b770e5\\log4j-slf4j2-impl-2.24.3.jar;C:\\Users\\алексей\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.logging.log4j\\log4j-api\\2.24.3\\b02c125db8b6d295adf72ae6e71af5d83bce2370\\log4j-api-2.24.3.jar;C:\\Users\\алексей\\.gradle\\caches\\modules-2\\files-2.1\\org.openjfx\\javafx-graphics\\23\\160bad2ba0b248ecc31412ca4b6ef77510e717d1\\javafx-graphics-23-win.jar;C:\\Users\\алексей\\.gradle\\caches\\modules-2\\files-2.1\\org.slf4j\\slf4j-api\\2.0.16\\172931663a09a1fa515567af5fbef00897d3c04\\slf4j-api-2.0.16.jar;C:\\Users\\алексей\\.gradle\\caches\\modules-2\\files-2.1\\org.openjfx\\javafx-base\\23\\cfefa13bc23dedcba9d720a42679b8d63adf83c9\\javafx-base-23-win.jar'
+-d 'D:\\IdeaProjects\\Mainich\\build\\docs\\javadoc'
+-doctitle 'Mainich API'
+-encoding 'UTF-8'
+-link 'https://docs.oracle.com/en/java/javase/17/docs/api/'
+-link 'https://openjfx.io/javadoc/23/'
+-notimestamp 
+-quiet 
+-version 
+-windowtitle 'Mainich API'
+'D:\\IdeaProjects\\Mainich\\src\\main\\java\\Metro.java'
+'D:\\IdeaProjects\\Mainich\\src\\main\\java\\MetroDataHandler.java'
+'D:\\IdeaProjects\\Mainich\\src\\main\\java\\PathfindingAlgorithm.java'
